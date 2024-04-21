@@ -1,5 +1,7 @@
 # Задание № 1
 
+ff
+
 
 class Car:
     brand = "VW"
@@ -62,7 +64,7 @@ class Car:
         self.name = f"{br} {mod}"
 
     def __str__(self):
-        return f"""\n{self.brand} - Бренд автомобиля\n{self.model} - Модель автомобиля\n{self.price} - 
+        return f"""\n{self.brand} - Бренд автомобиля\n{self.model} - Модель автомобиля\n{self.price} -
         Цена автомобиля\n{self.name} - Бренд и модель автомобиля
         """
 
@@ -121,7 +123,8 @@ class Array:
         self.values = self.get_integers()
 
     def get_integers(self):
-        result = list(filter(lambda x: type(x) is int or type(x) is float, self.args))
+        result = list(filter(lambda x: type(
+            x) is int or type(x) is float, self.args))
         return sorted(result)
 
     def __str__(self):
